@@ -10,12 +10,7 @@ body {
   width: 100%;
   max-height: 100%;
 
-  // update BODY at the phone BP
-  //@include phone {
-  //  background-color: #fff;
-  //}
-  //}
-
+}
   //applying Nesting on the nav
   nav {
 
@@ -75,49 +70,17 @@ body {
     @include linear-gradient(#C7A166, #C7C5BD, #C7C775, $button-bg * .5)
   }
 
-  //applying media querie on the web page
-  //@import "_meadia-queries.scss";
-  //@mixin phone {
-  //  @media only screen and (max-width: 480px) {
-  //    @content;
-  //
-  //  }
-  //}
-  //  body {
-  //    background-color: rgba(121, 128, 36, 0.26);
-  //    width: 100%;
-  //    max-height: 100%;
-  //  }
-  //
-  //  @include phone {
-  //    body {
-  //      width: 80%;
-  //      background-color: rgba(255, 255, 210, 0);
-  //    }
-  //    a {
-  //      color: #000000;
-  //    }
-  //    a:hover {
-  //      background-color: #eaffce;
-  //    }
-  //  }
   //breakpoint
   @import "../sass-new/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
-  //body {
-  //  background-color: rgba(121, 128, 36, 0.26);
-  //  @include breakpoint(500px 700px) {
-  //    background-color: #c79b4d;
-  //  }
-  //}
+
+
   body {
     background-color: rgba(121, 128, 36, 0.26);
   }
-  $bd: max-width 500px;
+
+  $bd: max-width 800px;
   @include breakpoint($bd) {
     body {
-      background-color: #d8f0a4;
+      background-color: darkred;
     }
   }
-
-
-

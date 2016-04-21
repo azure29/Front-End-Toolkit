@@ -139,31 +139,11 @@ a:hover {
   background-image: -webkit-linear-gradient(#C7A166, #C7C5BD, #C7C775, #64643b);
   background-image: linear-gradient(#C7A166, #C7C5BD, #C7C775, #64643b); }
 
-/*body {*/
-  /*background-color: rgba(121, 128, 36, 0.26);*/
-  /*width: 100%;*/
-  /*max-height: 100%; }*/
+body {
+  background-color: rgba(121, 128, 36, 0.26); }
 
-/*@media only screen and (max-width: 480px) {*/
-  /*body {*/
-    /*width: 80%;*/
-    /*background-color: rgba(29, 163, 111, 0.52); }*/
-
-  /*a {*/
-    /*color: #000000; }*/
-
-  /*a:hover {*/
-    /*background-color: #eaffce; } }*/
-
-/*@media only screen and (max-width: 768px) {*/
-  /*body {*/
-    /*width: 80%;*/
-    /*background-color: red; }*/
-
-  /*a {*/
-    /*color: #000000; }*/
-
-  /*a:hover {*/
-    /*background-color: #eaffce; } }*/
+@media (max-width: 800px) {
+  body {
+    background-color: darkred; } }
 
 /*# sourceMappingURL=main.css.map */
