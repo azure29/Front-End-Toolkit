@@ -1,4 +1,6 @@
-
+@import "../sass-new/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "bourbon/bourbon";
+@import "profile";
 //variables
 $text-color: #ffffff;
 $bg-color: #636a62;
@@ -37,7 +39,7 @@ body {
     background-color: $hover-color;
   }
   //using partials
-  @import "profile";
+  //@import "profile";
   //applying extend on the button
   $button-bg: #C7C775;
   $button-color: #ffffff;
@@ -57,7 +59,7 @@ body {
     padding-right: 50px;
   }
   //working with bourbon
-  @import "bourbon/bourbon";
+  //@import "bourbon/bourbon";
   //vendor
   .footer-border {
     background-color: tint(#C79828, 50%);
@@ -71,8 +73,7 @@ body {
   }
 
   //breakpoint
-  @import "../sass-new/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
-
+  //@import "../sass-new/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
 
   body {
     background-color: rgba(121, 128, 36, 0.26);
@@ -83,4 +84,11 @@ body {
     body {
       background-color: darkred;
     }
+    $bd: max-width 460px;
+    @include breakpoint($bd){
+      body {
+        background-color: #5a6013;
+      }
+    }
+
   }
